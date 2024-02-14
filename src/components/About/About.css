@@ -1,0 +1,279 @@
+.about {
+    width: 100%;
+    padding: 5rem 0;
+    /* height: 100vh; */
+    /* background-color: blue; */
+    /* margin-top: 8rem; */
+}
+.a-container {
+    padding: 0 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.a-left {
+    display: grid;
+    order: 2;
+    /* background-color: #8a2be2; */
+}
+.a-right {
+    display: grid;
+    /* background-color: aquamarine; */
+    place-items: center;
+    order: 1;
+}
+.profile-card {
+    display: flex;
+    width: 300px;
+    height: 350px;
+    position: relative;
+    border-radius: 14px;
+    z-index: 1;
+    overflow: hidden;
+    flex-direction: column;
+    box-shadow:
+        20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+.bg {
+    position: absolute;
+    width: 290px;
+    height: 340px;
+    /* background-color: #8a2be2; */
+    z-index: 2;
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+    align-items: center;
+    justify-content: center;
+}
+.bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #176b87;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+}
+@keyframes blob-bounce {
+    0% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+    25% {
+        transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+    50% {
+        transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+    75% {
+        transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+    100% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+}
+.a-social {
+    margin-top: 0.5rem;
+    height: fit-content;
+    width: fit-content;
+    /* display: grid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #176b872c;
+    padding: 10px 40px;
+    border-radius: 14px;
+}
+.a-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    /* border: 1px solid rgba(214, 8, 8, 0.895); */
+    z-index: 2;
+    font-size: 30px;
+}
+.a-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: 1;
+    border-radius: 10px;
+    /* pointer-events: none; */
+    transition: all 0.3s;
+    font-size: 0;
+}
+.github .a-bg {
+    background: #181818;
+}
+.ig .a-bg {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+.fb .a-bg {
+    background: #3b5998;
+}
+.telegram .a-bg {
+    background: #0088cc;
+}
+.a-btn:hover .a-bg {
+    transform: scale(1.5);
+    /* transform-origin: bottom; */
+    font-size: 20px;
+    color: white;
+}
+
+.a-btn:hover .svgContainer {
+    border: 1px solid rgba(216, 216, 216, 0.466);
+    background-color: rgba(209, 209, 209, 0.466);
+    backdrop-filter: blur(4px);
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-bottom: 8px;
+    background: linear-gradient(currentColor 0 0) 0 100%/0% 3px no-repeat;
+    animation: l2 2s linear infinite;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-size: 3.5rem;
+    padding-bottom: 1px;
+    background: linear-gradient(currentColor 0 0) 0 100%/0% 5px no-repeat;
+    animation: l2 2s linear infinite;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 3px;
+    color: #176b87;
+}
+.loader:before {
+    content: "ABOUT ME";
+}
+@keyframes l2 {
+    to {
+        background-size: 100% 5px;
+    }
+}
+@keyframes l2 {
+    to {
+        background-size: 100% 5px;
+    }
+}
+.intro {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+.a-btn-txt {
+    display: flex;
+    gap: 1rem;
+}
+.download {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    background-color: #ffffff80;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #176b87;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    margin: 1.5rem 0;
+}
+
+.download:hover {
+    transform: scale(1.05);
+    border-color: #176b87;
+}
+
+.download:hover {
+    transform: translate(4px);
+}
+
+.download:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+.download::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgb(255, 255, 255),
+        rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+@media screen and (min-width: 767px) and (max-midth: 1023px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (max-width: 767px) {
+    .a-container {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        padding: 0 1.5rem;
+    }
+    .a-left {
+        order: 1;
+        padding: 1rem 2rem;
+    }
+    .loader{
+        font-size: 35px;
+    }
+    
+}
+@media (max-width: 576px) {
+}
