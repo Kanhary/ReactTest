@@ -196,12 +196,12 @@ const Skills = () => {
                   <div
                     className="progress-line"
                     style={{
-                      maxWidth: "50%",
+                      maxWidth: "30%",
                       display: "flex",
                       justifyContent: "end",
                     }}
                   >
-                    <span>50%</span>
+                    <span>30%</span>
                   </div>
                 </div>
               </div>
@@ -259,12 +259,12 @@ const Skills = () => {
                   <div
                     className="progress-line"
                     style={{
-                      maxWidth: "70%",
+                      maxWidth: "50%",
                       display: "flex",
                       justifyContent: "end",
                     }}
                   >
-                    <span>70%</span>
+                    <span>50%</span>
                   </div>
                 </div>
               </div>
@@ -307,7 +307,7 @@ const Skills = () => {
                 <div className="box-c">
                   <div className="skill-item" id="npm" data-value="75">
                     <svg viewBox="0 0 100 100" className="skill-svg">
-                      <circle cx="50" cy="50" r="50" fill="#C7CCD6d" />
+                      <circle cx="50" cy="50" r="50" fill="#C7CCD6" />
                       <circle cx="50" cy="50" r="34" fill="#fff" />
                       <circle
                         className="skill-path"

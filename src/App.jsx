@@ -8,6 +8,7 @@ import About from './components/About/About'
 import Skills from './components/Skills/Skills'
 import Education from './components/Education/Education'
 import Contact from './components/Contact/Contact'
+import Foote from './components/Footer/Foote'
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
       <Skills/>
       <Contact/>
       <Footer/>
-
+      <Foote/>
     </div>
     // <div>Hello<Navbar/></div>
   )

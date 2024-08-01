@@ -85,7 +85,10 @@
 
 @media screen and (min-width: 767px) and (max-midth: 1023px) {
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    .education-row{
+        display: block;
+    }
 }
 @media screen and (max-width: 767px) {
     .education-row{

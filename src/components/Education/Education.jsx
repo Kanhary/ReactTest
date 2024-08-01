@@ -63,6 +63,7 @@ const Education = () => {
               </div>
             </div>
           </div>
+          
         </div>
         <div className="education-column" data-aos="fade-left" data-aos-duration="2000">
           <h3 className="title">Volunteer & Course</h3>
